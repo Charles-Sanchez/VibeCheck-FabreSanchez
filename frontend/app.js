@@ -36,7 +36,7 @@ document.querySelectorAll(".btnMood").forEach(btn => {
 document.getElementById("btnSmash").addEventListener("click", async () => {
   const res = await fetch(`${API_BASE}/api/smash`, { method: "POST" });
   const data = await res.json();
-  show({ message: "SMASH registered 💥", ...data });
+  show({ message: "PININDOT! JOLO CARREON!", ...data });
 });
 
 document.getElementById("btnSecret").addEventListener("click", async () => {
