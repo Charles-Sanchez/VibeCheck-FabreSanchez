@@ -21,22 +21,22 @@ app.use(express.json());
 
 // Data pools (random picks). You can customize these.
 const fortunes = [
-  "You will debug it in 5 minutes... after 55 minutes of panic.",
-  "Your next commit will be clean and meaningful.",
-  "A bug will disappear when you add one console.log().",
-  "You passed the vibe check today. 😎",
+  "Agay! Agay!",
+  "Pera o Bayo!",
+  "Pepito Manaloto!",
+  "Ivovouch kita kay lord",
 ];
 
 const jokes = [
-  "Why did the developer go broke? Because they used up all their cache.",
-  "My code has two moods: works or why-is-this-happening.",
-  "I told my program a joke... it just threw an exception.",
+  "ANIM PITO ANIM PITO ANIM PITO",
+  "Ano sinabi ni Rizal nung binaril siya? Agayy! Agayy! *namatay",
+  "Ako... Ako yung joke :<",
 ];
 
 const vibeMap = {
-  happy: { emoji: "😄", message: "Keep going - you're shipping greatness!" },
-  tired: { emoji: "🥱", message: "Hydrate. Stretch. Then commit." },
-  stressed: { emoji: "😵‍💫", message: "Breathe. One bug at a time." },
+  happy: { emoji: "😄", message: "Agay! Agay! walang pasok!" },
+  tired: { emoji: "🥱", message: "Unli water sa Federizo" },
+  stressed: { emoji: "😵‍💫", message: "AGAY! AGAY!" },
 };
 
 // Smash counter (stored in memory for now)
@@ -86,10 +86,10 @@ app.get("/api/secret", (req, res) => {
   const code = req.query.code;
 
   if (code === "411L") {
-    return res.json({ message: "🎉 Secret unlocked: +10 luck on your next merge!" });
+    return res.json({ message: "🎉 ITLOG NI PACQUIAO: anong PAK ang mahilig tumalon? edi... tiPAKlong" });
   }
 
-  res.status(403).json({ message: "Nope 😄 Try code=411L" });
+  res.status(403).json({ message: "Wala si pacquiao dito, nasa 411L" });
 });
 
 // Start server
